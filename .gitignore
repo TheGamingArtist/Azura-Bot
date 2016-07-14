@@ -1,0 +1,9 @@
+var Discord = require("discord.js");
+ 
+var Azura-Bot = new Discord.Client();
+ 
+Azura-Bot.on("message", function(message) {
+	if(message.content === "ping") {
+		Azura-Bot.reply(message, "pong");
+    }
+});
